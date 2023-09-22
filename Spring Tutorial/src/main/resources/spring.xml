@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--  classes that we are creating, or we will be creating we define over here also
+we provide this file to our class path-->
+
+    <!--    Defining the bean tag for Doctor class-->
+    <!--    <bean id = "doctor" class = "demo.Doctor">-->
+    <!--Adding properties using setter injection-->
+    <!--        <property name="qualification" value="MBBS"></property>-->
+
+    <!--Entire object from Nurse class in injected in doctor class-->
+    <!--        <property name="nurse" ref="nurse"></property>-->
+    <!-- creating constructor injection-->
+    <!--        <constructor-arg value="MBBS"></constructor-arg>-->
+
+    <!--    </bean>-->
+    <!--    Defining the bean tag for Nurse class-->
+    <!--    <bean id = "nurse" class = "demo.Nurse"></bean>-->
+
+
+    <!-- Annotation -> creating base package, Components are in demo package so load them from there-->
+    <context:component-scan base-package="demo"></context:component-scan>
+</beans>
